@@ -1,329 +1,60 @@
-* {
+*{
     box-sizing: border-box;
-  }
-
-/* HTMl törzs */ 
-html, body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    height: 100%;
-    }
-
-/* Lista */ 
-ul, li {
-    list-style: none;
-}    
-
-/* PC nézet */
-@media only screen and (min-width: 413px) {
-
-    /* Fejléc */
-    .header {
-        padding: 60px;
-        text-align: center;
-        background: #636363;
-        color: white;
-      }
-
-    /* Menüsor */
-    .navbar {
-       display: flex;
-       background-color: #8b8888;
-    }
-
-    .navbar a {
-       color: black;
-       background-color: #b6b4b4;
-       padding: 14px 20px;
-       text-decoration: none;
-       text-align: center;
-       margin-right: 5px;
-       cursor: pointer;
-    }
-      
-    .navbar a:hover {
-       background-color: #ddd;
-       color: black;
-    }
-
-    /* Flexbox konténer */
-    .row {  
-       display: flex;
-       flex-wrap: wrap;
-       height: 100%;
-    }
-
-    /* Tartalom */
-    .main {
-       flex: 70%;
-       background-color: white;
-       padding: 20px;
-       height: 100%;
-    }
-
-    /* Flexbox média konténer */
-    .mediakontener {
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
-    }
-
-    /* Videók */
-    iframe {  
-        width: 380px;
-        height: 180px;
-        padding: 10px;
-        box-shadow: 5px 5px 5px 5px #b1adad; 
-    }    
-         
-    /* Képek */
-    img {  
-        width: 380px;
-        height: 180px;
-        padding: 10px;
-        box-shadow: 5px 5px 5px 5px #b1adad; 
-    } 
-
-    /* Flexbox belépés és regisztráció konténer */
-    .belepes-regisztracio {
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
-    }   
-    
-    /* Belépés konténer */
-    .belepes {
-        padding: 10px;
-        width: 500px;
-        height: 300px;
-        background-color: #fff;
-        box-shadow: 5px 5px 5px 5px #b1adad;          
-    }    
-
-    /* Belépés gomb */
-    button[type=submit] {
-        background-color: #007180;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        border: 1px solid;
-        cursor: pointer;
-    }
-
-    /* Belépés form input mezők pozicionálása */
-    input[type=email], input[type=password] {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Bejelentkezés gombok */
-    .bejelentkezesgombok {
-        display: flex;
-        justify-content: center;
-        height: 60px;
-        align-items: flex-end;
-    }    
-
-    /* Regisztráció gomb */
-    button[type=reset] {
-        background-color: red;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        border: 1px solid;
-        cursor: pointer;
-    }    
-
-    /* Regisztráció konténer */
-    .regisztracio {
-        padding: 10px;
-        width: 500px;
-        height: 300px;
-        background-color: #fff;
-        box-shadow: 5px 5px 5px 5px #b1adad;        
-    }   
-    
-    /* Bejelentkezés gombok */
-    .regisztraciogomb {
-        display: flex;
-        justify-content: center;
-        height: 110px;
-        align-items: flex-end;
-    }   
-
-    /* Jobb oldali sáv */
-    .side {
-        flex: 30%;
-        background-color: #b6b4b4;
-        padding: 20px;
-        height: 100%;
-    }
-
-    /* Lábléc */
-    .footer {
-       padding: 10px;
-       text-align: center;
-       background: #636363;
-       color: #fff;
-       font-weight: 100;
-    }
-
 }
 
-/* Mobil nézet */
-@media only screen and (max-width: 412px) {
+html, body{
+    height: 100%;
+}
 
-    h1 {
-        font-size: 3rem;
-    }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* Fejléc */
-    .header {
-        padding: 60px;
-        text-align: center;
-        background: #636363;
-        color: white;
-      }
+.container{
+    width: 450px;
+    min-height: 100px;
+    border: 1px solid grey;
+    box-shadow: 0 0 10px grey;
+    padding: 15px;
+}
 
-    /* Menüsor */
-    .navbar {
-       display: flex;
-       background-color: #8b8888;
-    }
+.cim{
+    text-align: center;
+}
 
-    .navbar a {
-       color: black;
-       background-color: #b6b4b4;
-       padding: 14px 20px;
-       text-decoration: none;
-       text-align: center;
-       margin-bottom: 5px;
-    }
-      
-    .navbar a:hover {
-       background-color: #ddd;
-       color: black;
-    }
+.tajekoztatas{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    background-color: #599ee9;
+    color: #FFF;
+    padding: 15px;
+}
 
-    /* Flexbox konténer */
-    .row {  
-       width: 100%;
-    }
+form{
+	padding:40px;
+}
 
-    /* Flexbox konténer és menüsor */
-    .row, .navbar {   
-        flex-direction: column;
-    }
+input{
+    width: 100%;
+    padding:  6px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
 
-    /* Tartalom */
-    .main {
-        padding: 20px;
-     }
+ul li{
+	list-style:circle;
+	margin-left:20px;
+	margin-top:10px;
+}
 
-    /* Flexbox média konténer */
-    .mediakontener {
-        align-items: center;
-    }
+.result{
+	margin:30px 0;
+}
 
-    /* Videók */
-    iframe {  
-        width: 100%;
-        box-shadow: 5px 5px 5px #b1adad;
-        margin-bottom: 5px;
-    }    
-         
-    /* Képek */
-    img {  
-        width: 100%;
-        box-shadow: 5px 5px 5px #b1adad;
-        margin-bottom: 5px;
-    }   
-
-    /* Flexbox belépés és regisztráció konténer */
-    .belepes-regisztracio {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        padding: 10px;
-    }   
-    
-    /* Belépés konténer */
-    .belepes {
-        padding: 10px;
-        width: 100%;
-        height: 300px;
-        background-color: #fff;
-        box-shadow: 5px 5px 5px 5px #b1adad;          
-        margin-bottom: 15px;
-    }    
-
-    /* Belépés gomb */
-    button[type=submit] {
-        background-color: #007180;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        border: 1px solid;
-        cursor: pointer;
-    }
-
-    /* Belépés form input mezők pozicionálása */
-    input[type=email], input[type=password] {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Bejelentkezés gombok */
-    .bejelentkezesgombok {
-        display: flex;
-        justify-content: center;
-        height: 60px;
-        align-items: flex-end;
-    }    
-
-    /* Regisztráció gomb */
-    button[type=reset] {
-        background-color: red;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        border: 1px solid;
-        cursor: pointer;
-    }    
-
-    /* Regisztráció konténer */
-    .regisztracio {
-        padding: 10px;
-        width: 100%;
-        height: 300px;
-        background-color: #fff;
-        box-shadow: 5px 5px 5px 5px #b1adad;  
-        margin-bottom: 5px;      
-    }   
-    
-    /* Bejelentkezés gombok */
-    .regisztraciogomb {
-        display: flex;
-        justify-content: center;
-        height: 110px;
-        align-items: flex-end;
-    }   
-   
-    /* Jobb oldali sáv */
-    .side {
-        flex: 30%;
-        background-color: #b6b4b4;
-        padding: 20px;
-        height: 100%;
-    }
-
-    /* Lábléc */
-    .footer {
-       text-align: center;
-       background: #636363;
-       color: #fff;
-       font-weight: 100;
-       padding: 10px;
-    }
-    
+.result .title{
+	text-align:center;
 }

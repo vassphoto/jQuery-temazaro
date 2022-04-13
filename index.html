@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery</title>
+    <title>jQuery témazáró feladat - BMI - testtömegindex kalkulátor</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="jquery-temazaro-style.css">
 </head>
 <body>
-
+    <section class="container">
+        <h1 class="cim">BMI - testtömegindex kalkulátor</h1>
+        <div class="tajekoztatas">
+            A BMI - testtömegindex kalkulátorral megtudhatod, hogy elhízottnak számítasz-e vagy sem.
+            <ul>
+                <li>Add meg a súlyod. (pl.: 75)</li>
+                <li>Add meg a magasságod. (pl.: 172)</li>
+                <li>Kattints a "Kalkulálás" gombra.</li>
+            </ul>
+    </div>
+        <form class="box">
+            <div class="field">
+            <label for="" class="label">
+                Súly (kg-ban):
+            </label>
+            <input id="weight" class="input" type="number">
+        </div>
+        
+        <div class="field">
+            <label class="label">
+                Magasság (cm-ben):
+            </label>
+            <input id="height" class="input" type="text">
+        </div>
+            <input class="button is-link is-outlined" type="submit" value="Kalkulálás">
+        </form>
+        
+        <div class="result">
+            <h2 class="title"</h2>
+        </div>
+    </section>
 
     <script src="jquery-temazaro-script.js"></script>    
 </body>
